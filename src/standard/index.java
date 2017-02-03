@@ -18,6 +18,7 @@ import java.net.HttpURLConnection;
 @WebServlet("/index")
 public class index extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -32,7 +33,7 @@ public class index extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 	}
 
 	/**
@@ -40,61 +41,12 @@ public class index extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String uname = request.getParameter("uname");
-		String pw = request.getParameter("pw");
 		
-		
-		
-		if(uname.equals("Nadine")){
-			response.sendRedirect("./home");
-			XMLWriter xml = new XMLWriter();
-			xml.createUser(uname, "E-Banking");
-			System.out.println(sendEvent("x","y",xml.getresponseString()));
-		}else{
-		response.sendRedirect("NoUserFound.jsp");	
-		}
 		
 		
 	}
 	
-	public boolean sendEvent(String dsiServer, String httpEndpoint, String xml) {
-		String url = "http://127.0.0.1:8080/service/loginevent";
-		boolean success;
-		   try {
-		      System.out.println("Connecting to: " + url);
-		      HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
-		      try {
-		         conn.setRequestProperty("Content-Type", "application/xml");
-		         conn.setDoInput(true);
-		         conn.setDoOutput(true);
-		         
-		         System.out.println("Posting file: " + xml);
-		         
-		         int len = xml.length();
-		         byte[] b = new byte[len];
-		         b = xml.getBytes();
-		         
-		         try {
-		            OutputStream requestStream = conn.getOutputStream();
-		            requestStream.write(b);
-		            requestStream.close();
-		            } catch (Exception e) {
-		            	System.out.println("Something went wrong during sending the event, url=" + url + "\n" + xml);
-		            	e.printStackTrace();
-		            } 
-		      		         
-		         int responseCode = conn.getResponseCode();
-		         System.out.println("Response code: " +  responseCode);
-		         success = (responseCode == 200);
-		      } finally {
-		         conn.disconnect();
-		      }
-		   } catch (IOException e) {
-		      e.printStackTrace();
-		      success = false;
-		   }
-		   return success;
-		
-	}
+	
+	
 
 }

@@ -15,25 +15,18 @@ import java.io.StringWriter;
 
 public class XMLWriter {
 	
-	public static String responseString;
 	
-	public void createUser(String name, String channel){
-		User user = new User();
-		user.setUname(name);
-		user.setChannel(channel);
-		Date date = new Date();
-		user.setDate(date);
-		jaxbObjectToXML(user);
-	}
+	
 	
 		
 	
 	
 	
-	 public static void jaxbObjectToXML(User user) {
-
+	 public static String jaxbObjectToXMLString(User user) {
+		  String responseString;
+		  JAXBContext context;
 	        try {
-	            JAXBContext context = JAXBContext.newInstance(User.class);
+	        	context = JAXBContext.newInstance(User.class);
 	            Marshaller m = context.createMarshaller();
 	            //for pretty-print XML in JAXB
 	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
@@ -45,17 +38,18 @@ public class XMLWriter {
 				m.marshal(user, sw );
 	            responseString =sw.toString();
 
+	            return responseString;
 	            // Write to File
 	            //m.marshal(user, new File("text.xml"));
 	          
 	        } catch (JAXBException e) {
 	            e.printStackTrace();
+	            responseString = "Fehler bei XML-Erstellung";
+	            return responseString;
 	        }
 	    }
 	 
-	 public String getresponseString(){
-		 return responseString;
-	 }
+	
 	 
 	 
 	 

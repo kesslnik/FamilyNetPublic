@@ -1,21 +1,23 @@
 package standard;
 import java.util.Date;
 
-
+import javax.websocket.Session;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 @XmlRootElement(name = "LoginEvent")
-@XmlType(propOrder = {"channel", "uname", "date"})
+@XmlType(propOrder = {"channel", "application", "session", "date"})
 
 public class User {
 	
 	String channel;
-	String uname;
-	Date date;
+	String application;
+	String session;
+	XMLGregorianCalendar date;
 
 	public User() {
 		// TODO Auto-generated constructor stub	
@@ -31,25 +33,35 @@ public class User {
 	public void setChannel(String channel) {
 		this.channel = channel;
 	}
+	
+	@XmlElement(name = "application")
+	public String getApplication() {
+		return application;
+	}
 
-	@XmlElement(name = "client")
-	public String getUname() {
-		return uname;
+	
+	public void setApplication(String appl) {
+		this.application = appl;
+	}
+
+	@XmlElement(name = "session")
+	public String getSession() {
+		return session;
 	}
 
 
-	public void setUname(String uname) {
-		this.uname = uname;
+	public void setSession(String uname) {
+		this.session = uname;
 	}
 
 	@XmlElement(name = "date")
-	public Date getDate() {
+	public XMLGregorianCalendar getDate() {
 		return date;
 	}
 
 	
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDate(XMLGregorianCalendar xmlGregorianCalendar) {
+		this.date = xmlGregorianCalendar;
 	}
 
 }
