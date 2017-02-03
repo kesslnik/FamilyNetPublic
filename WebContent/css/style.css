@@ -1,0 +1,39 @@
+.bckl{
+    margin: 0;
+    background: url('../images/background-login.jpg') no-repeat center center fixed;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.navbar-default {
+    
+    background-color: #808080;
+    border-color: #e7e7e7;
+    text-color:white;
+    margin:1px;
+}
+.myform{
+margin:0px auto;	
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+.col-md-1{
+	padding-right:20px;
+	padding-left:20px
+}
+  
+ #redtop{
+ background-color:red;
+ text-color:red;
+ color:red;
+ height:5px;
+ }
+ 
+ .navbar-nav> li:last-child{
+    float:right;
+}
