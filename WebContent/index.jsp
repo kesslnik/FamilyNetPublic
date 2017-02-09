@@ -14,7 +14,7 @@
 <body>
 <div class="row" id="redtop">
 
-<div class="col-sm-3 col-md-offset-6"><h5 style="font-size: 1.1em; font-weight:small"><a style="color:white">de</a><a style="color:white"> | Beratersuche | </a><a style="color:white">Notfall</a><a style="color:white"> | E-Banking</a></h5></div>
+<div class="col-sm-3 col-md-offset-6"><h5 style="font-size: 1.1em; font-weight:small; text-align:right;"><a style="color:white">de</a><a style="color:white"> | Beratersuche | </a><a style="color:white">Notfall</a><a style="color:white"> | E-Banking</a></h5></div>
 <div class="col-sm-2">
     <div class="input-group input-group-sm" style="margin-top:1.5%;">
     <input type="text" class="form-control" placeholder="Suchbegriff...">
@@ -33,6 +33,8 @@
 
 
 <div class="col-md-4" style="padding-left:1px"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
+<div class ="col-md-4 col-md-offset-4"><h4 style="text-align:right">
++41 31 666 68 98</h4><h6 style="text-align:right">Wir sind gerne für Sie da!</h6></div>
 
 </div>
 
@@ -40,13 +42,13 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <ul class="nav navbar-nav">
-        <li><a  href="#">BERATUNG</a></li>
-        <li><a  href="#">ONLINE SERVICES</a></li>
-        <li><a  href="">ZAHLEN</a></li>
-        <li><a  href="">SPAREN</a></li>
-        <li><a  href="">ANLEGEN</a></li>
-        <li><a  href="">VORSORGEN</a></li>
-        <li><a  href="">FINANZIEREN</a></li>
+        <li><a style="color:black; font-size:1.1em" href="#">BERATUNG</a></li>
+        <li><a style="color:black; font-size:1.1em" href="#">ONLINE SERVICES</a></li>
+        <li><a style="color:black; font-size:1.1em" href="">ZAHLEN</a></li>
+        <li><a style="color:black; font-size:1.1em" href="">SPAREN</a></li>
+        <li><a style="color:black; font-size:1.1em" href="">ANLEGEN</a></li>
+        <li><a style="color:black; font-size:1.1em" href="">VORSORGEN</a></li>
+        <li><a style="color:black; font-size:1.1em" href="">FINANZIEREN</a></li>
         </ul>
        
   </div>
