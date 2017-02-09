@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema elementFormDefault="qualified" targetNamespace="http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:m="http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model"
+>
+
+    <element name="CRMImpulse" type="m:CRMImpulse"/>
+    <complexType name="CRMImpulse">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="CRMImpulse"/>
+            </appinfo>
+        </annotation>
+        <complexContent>
+        <extension base="m:Impulse">
+        <sequence>
+            <element name="dueDate" type="dateTime">
+            </element>
+            <element name="taskType" type="string">
+            </element>
+            <element name="text" type="string">
+            </element>
+        </sequence>
+        </extension>
+        </complexContent>
+    </complexType>
+
+    <element name="CRMReaction" type="m:CRMReaction"/>
+    <complexType name="CRMReaction">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="CRMReaction"/>
+            </appinfo>
+        </annotation>
+        <complexContent>
+        <extension base="m:Reaction">
+        <sequence>
+        </sequence>
+        </extension>
+        </complexContent>
+    </complexType>
+
+    <element name="ClientActivityEvent" type="m:ClientActivityEvent"/>
+    <complexType name="ClientActivityEvent">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="ClientActivityEvent"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="code" type="string">
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="paramName" type="string">
+            </element>
+            <element name="paramValue" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="ClientReaction" type="m:ClientReaction"/>
+    <complexType name="ClientReaction">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="ClientReaction"/>
+            </appinfo>
+        </annotation>
+        <complexContent>
+        <extension base="m:Reaction">
+        <sequence>
+        </sequence>
+        </extension>
+        </complexContent>
+    </complexType>
+
+    <element name="ClientSetupEvent" type="m:ClientSetupEvent"/>
+    <complexType name="ClientSetupEvent">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="ClientSetupEvent"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="activePromotion" type="string">
+            </element>
+            <element name="age" type="double">
+            </element>
+            <element name="amountOfExpenses" type="double">
+            </element>
+            <element name="bankingPackage" type="string">
+            </element>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="customerSegment" type="string">
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="language" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="ClientUpdateEvent" type="m:ClientUpdateEvent"/>
+    <complexType name="ClientUpdateEvent">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="ClientUpdateEvent"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="activePromotion" type="string">
+            </element>
+            <element name="age" type="double">
+            </element>
+            <element name="amountOfExpenses" type="double">
+            </element>
+            <element name="bankingPackage" type="string">
+            </element>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="customerSegment" type="string">
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="language" type="string">
+            </element>
+            <element name="latestImpulse" type="string">
+            </element>
+            <element name="latestReaction" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="ExpenseBookingEvent" type="m:ExpenseBookingEvent"/>
+    <complexType name="ExpenseBookingEvent">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="ExpenseBookingEvent"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="amount" type="double">
+            </element>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="Impulse" type="m:Impulse"/>
+    <complexType name="Impulse">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="Impulse"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="impulseId" type="string">
+            </element>
+            <element name="impulseName" type="string">
+            </element>
+            <element name="reason" type="string">
+            </element>
+            <element name="relatedPromotionName" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="LetterImpulse" type="m:LetterImpulse"/>
+    <complexType name="LetterImpulse">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="LetterImpulse"/>
+            </appinfo>
+        </annotation>
+        <complexContent>
+        <extension base="m:Impulse">
+        <sequence>
+            <element name="deliveryChannel" type="string">
+            </element>
+            <element name="letterInputKeyValuePair" type="m:LetterInputKeyValuePair" maxOccurs="unbounded" minOccurs="0">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="letterInputKeyValuePairs"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="letterTemplate" type="string">
+            </element>
+        </sequence>
+        </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="LetterInputKeyValuePair">
+        <sequence>
+            <element name="key" type="string">
+            </element>
+            <element name="value" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="LoginEvent" type="m:LoginEvent"/>
+    <complexType name="LoginEvent">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="LoginEvent"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="application" type="string">
+            </element>
+            <element name="channel" type="string">
+            </element>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="MonitoringEvent" type="m:MonitoringEvent"/>
+    <complexType name="MonitoringEvent">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="MonitoringEvent"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="clientAge" type="double">
+            </element>
+            <element name="clientLanguage" type="string">
+            </element>
+            <element name="clientSegment" type="string">
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="impulseId" type="string">
+            </element>
+            <element name="impulseName" type="string">
+            </element>
+            <element name="promotionId" type="string">
+            </element>
+            <element name="promotionName" type="string">
+            </element>
+            <element name="reaction" type="string">
+            </element>
+            <element name="type" type="m:MonitoringEventType">
+            </element>
+        </sequence>
+    </complexType>
+    <element name="MonitoringEventType" type="m:MonitoringEventType"/>
+    <simpleType name="MonitoringEventType">
+        <restriction base="string">
+            <enumeration value="PROMOTION_START"/>
+            <enumeration value="PROMOTION_END"/>
+            <enumeration value="IMPULSE"/>
+            <enumeration value="REACTION"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="Option">
+        <sequence>
+            <element name="code" type="string">
+            </element>
+            <element name="link" type="string">
+            </element>
+            <element name="text" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="PromotionDecision" type="m:PromotionDecision"/>
+    <complexType name="PromotionDecision">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="PromotionDecision"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="channel" type="string">
+            </element>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="lastImpulseName" type="string">
+            </element>
+            <element name="latestReaction" type="string">
+            </element>
+            <element name="promotionName" type="string">
+            </element>
+            <element name="requestedMoment" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="Reaction" type="m:Reaction"/>
+    <complexType name="Reaction">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="Reaction"/>
+            </appinfo>
+        </annotation>
+        <sequence>
+            <element name="channel" type="string">
+            </element>
+            <element name="client" type="string">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="client"/>
+                        <businessType type="com.rsa.dsi.Client"/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="datetime" type="dateTime">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <timestamp/>
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="lastImpulseName" type="string">
+            </element>
+            <element name="reaction" type="string">
+            </element>
+        </sequence>
+    </complexType>
+
+    <element name="WebImpulse" type="m:WebImpulse"/>
+    <complexType name="WebImpulse">
+        <annotation>
+            <appinfo source="http://www.ibm.com/ia/Annotation">
+                <event elementName="WebImpulse"/>
+            </appinfo>
+        </annotation>
+        <complexContent>
+        <extension base="m:Impulse">
+        <sequence>
+            <element name="message" type="string">
+            </element>
+            <element name="option" type="m:Option" maxOccurs="unbounded" minOccurs="0">
+                <annotation>
+                    <appinfo source="http://www.ibm.com/ia/Annotation">
+                        <businessName name="options"/>
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+        </extension>
+        </complexContent>
+    </complexType>
+
+</schema>

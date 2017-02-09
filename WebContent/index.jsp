@@ -9,38 +9,44 @@
 <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="./js/bootstrap.min.js" type="text/javascript"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<title>BEKB E-Banking</title>
+<title>family-net.ch</title>
 </head>
 <body>
-<div id="redtop"></div>
+<div class="row" id="redtop">
+
+<div class="col-sm-3 col-md-offset-6"><h5 style="font-size: 1.1em; font-weight:small"><a style="color:white">de</a><a style="color:white"> | Beratersuche | </a><a style="color:white">Notfall</a><a style="color:white"> | E-Banking</a></h5></div>
+<div class="col-sm-2">
+    <div class="input-group input-group-sm" style="margin-top:1.5%;">
+    <input type="text" class="form-control" placeholder="Suchbegriff...">
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+      
+</div><!-- /input-group -->
+</div><!-- /.col-lg-6 -->
+
+
+</div>
 <div class= "container">
 <div class="row" style="margin-top:2%">
 
 
-<div class="col-md-4" style="padding-left:1px"><img alt="" src="./images/family-net_logo.png"></div>
-<div class="col-md-4" style="padding-right:3px"><h4 style="text-align:right;color:red">Angemeldet</h4></div>
-<div class="col-md-4" style="text-align:right;padding-right:1px">
-      <div class="input-group">
-      <input type="text" class="form-control" placeholder="Suchbegriff...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Search</button>
-      </span>
-    </div>
-  </div>
-</div>
+<div class="col-md-4" style="padding-left:1px"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
 
+</div>
 
 <div class="row" style="margin-top:1%">
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <ul class="nav navbar-nav">
-        <li><a style="color:white" href="#">BERATUNG</a></li>
-        <li><a style="color:white" href="#">ONLINE SERVICES</a></li>
-        <li><a style="color:white" href="">ZAHLEN</a></li>
-        <li><a style="color:white" href="">SPAREN</a></li>
-        <li><a style="color:white" href="">ANLEGEN</a></li>
-        <li><a style="color:white" href="">VORSORGEN</a></li>
-        <li><a style="color:white" href="">FINANZIEREN</a></li>
+        <li><a  href="#">BERATUNG</a></li>
+        <li><a  href="#">ONLINE SERVICES</a></li>
+        <li><a  href="">ZAHLEN</a></li>
+        <li><a  href="">SPAREN</a></li>
+        <li><a  href="">ANLEGEN</a></li>
+        <li><a  href="">VORSORGEN</a></li>
+        <li><a  href="">FINANZIEREN</a></li>
         </ul>
        
   </div>

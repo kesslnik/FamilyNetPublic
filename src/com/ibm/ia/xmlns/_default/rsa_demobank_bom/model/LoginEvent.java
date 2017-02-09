@@ -14,6 +14,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
@@ -37,14 +39,19 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  * 
  */
+
+
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "LoginEvent", propOrder = {
+@XmlType(propOrder = {
     "channel",
     "client",
     "datetime"
-})
+}
+)
+@XmlRootElement
 public class LoginEvent {
 
+	
     @XmlElement(required = true)
     protected String channel;
     @XmlElement(required = true)

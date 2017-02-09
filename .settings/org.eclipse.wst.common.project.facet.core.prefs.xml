@@ -1,0 +1,7 @@
+<root>
+  <facet id="jpt.jaxb">
+    <node name="classgen">
+      <attribute name="package" value="com.ibm.ia.xmlns._default.rsa_demobank_bom.second"/>
+    </node>
+  </facet>
+</root>

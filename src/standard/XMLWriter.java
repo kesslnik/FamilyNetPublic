@@ -1,13 +1,10 @@
 package standard;
-import java.io.File;
-import java.util.Date;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.transform.Result;
 
-import com.ibm.ia.xmlns._default.rsa_demobank_bom.model.ClientReaction;
+
+import com.ibm.ia.xmlns._default.rsa_demobank_bom.model.*;
 
 import java.io.StringWriter;
 
@@ -26,16 +23,21 @@ public class XMLWriter {
 		  String responseString;
 		  JAXBContext context;
 	        try {
-	        	context = JAXBContext.newInstance(User.class);
+	        	context = JAXBContext.newInstance(LoginEvent.class);
 	            Marshaller m = context.createMarshaller();
 	            //for pretty-print XML in JAXB
 	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-
+	          
+	            LoginEvent e = new LoginEvent();
+	            e.setChannel(user.getChannel());
+	            e.setDatetime(user.getDate());
+	            e.setClient(user.getSession());
+	            
 	            
 	            // Write to System.out for debugging
 	            StringWriter sw = new StringWriter();
 	            
-				m.marshal(user, sw );
+				m.marshal(e, sw );
 	            responseString =sw.toString();
 
 	            return responseString;
