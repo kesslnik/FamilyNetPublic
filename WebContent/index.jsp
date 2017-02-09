@@ -32,8 +32,9 @@
 <div class="row" style="margin-top:2%">
 
 
+
 <div class="col-md-4" style="padding-left:1px"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
-<div class ="col-md-4 col-md-offset-4"><h4 style="text-align:right">
+<div class ="col-md-4 col-md-offset-4"><h4 style="text-align:right"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="color:#ce002f"></span>
 +41 31 666 68 98</h4><h6 style="text-align:right">Wir sind gerne für Sie da!</h6></div>
 
 </div>
