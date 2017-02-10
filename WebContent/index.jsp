@@ -133,7 +133,7 @@
 </div>
 </div>
 </div>
-<div class="row">
+<div class="row" style="margin-top:12%">
 <img src="./images/family-net-traumhaus-gefunden.jpg">
 </div>
 <div class="row">
