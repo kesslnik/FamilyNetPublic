@@ -1,5 +1,6 @@
 package standard;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
@@ -23,11 +24,13 @@ public class XMLWriter {
 		  String responseString;
 		  JAXBContext context;
 	        try {
-	        	context = JAXBContext.newInstance(LoginEvent.class);
+	        	context = JAXBContext.newInstance(ObjectFactory.class);
 	            Marshaller m = context.createMarshaller();
 	            //for pretty-print XML in JAXB
 	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 	          
+	           
+	            
 	            LoginEvent e = new LoginEvent();
 	            e.setChannel(user.getChannel());
 	            e.setDatetime(user.getDate());

@@ -1,19 +1,20 @@
-.bckl{
-    margin: 0;
-    background: url('../images/background-login.jpg') no-repeat center center fixed;
-    background-color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
+
 .navbar-default {
     
     background-color: white;
     border-color: white;
     text-color:black;
     margin:1px;
+    
 }
+
+
+.navbar-default li:hover {
+    background-color: red;
+}
+
+
+
 .myform{
 margin:0px auto;	
 }
@@ -26,6 +27,11 @@ margin:0px auto;
 	padding-right:20px;
 	padding-left:20px
 }
+.dropdown-menu{
+	background-color:red;
+}
+
+
   /*teeeeest*/
  #redtop{
  background-color:#ce002f;
@@ -36,4 +42,13 @@ margin:0px auto;
  
  .navbar-nav> li:last-child{
     float:right;
+}
+
+#top{
+	position:fixed;
+	background-color:white;
+	right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }

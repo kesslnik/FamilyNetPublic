@@ -12,6 +12,8 @@
 <title>family-net.ch</title>
 </head>
 <body>
+<div class="row">
+<div id="top">
 <div class="row" id="redtop">
 
 <div class="col-sm-3 col-md-offset-6"><h5 style="font-size: 1.1em; font-weight:small; text-align:right;"><a style="color:white">de</a><a style="color:white"> | Beratersuche | </a><a style="color:white">Notfall</a><a style="color:white"> | E-Banking</a></h5></div>
@@ -28,37 +30,73 @@
 
 
 </div>
-<div class= "container">
+
+<div class= "container" >
 <div class="row" style="margin-top:2%">
 
 
 
-<div class="col-md-4" style="padding-left:1px"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
+<div class="col-md-4" style="padding-left:1px;margin-top:1%"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
 <div class ="col-md-4 col-md-offset-4"><h4 style="text-align:right"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="color:#ce002f"></span>
 +41 31 666 68 98</h4><h6 style="text-align:right">Wir sind gerne für Sie da!</h6></div>
 
 </div>
 
 <div class="row" style="margin-top:1%">
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default navbar-static-top" >
   <div class="container">
     <ul class="nav navbar-nav">
-        <li><a style="color:black; font-size:1.1em" href="#">BERATUNG</a></li>
-        <li><a style="color:black; font-size:1.1em" href="#">ONLINE SERVICES</a></li>
-        <li><a style="color:black; font-size:1.1em" href="">ZAHLEN</a></li>
-        <li><a style="color:black; font-size:1.1em" href="">SPAREN</a></li>
-        <li><a style="color:black; font-size:1.1em" href="">ANLEGEN</a></li>
-        <li><a style="color:black; font-size:1.1em" href="">VORSORGEN</a></li>
-        <li><a style="color:black; font-size:1.1em" href="">FINANZIEREN</a></li>
-        </ul>
-       
+    
+    
+     <li class="dropdown" id="xy">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">HYPOTHEK</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Festhypotheken</a></li>
+            <li><a href="#">Variable Hypothek</a></li>
+            <li><a href="#">Hypothekarzins</a></li>
+            <li><a href="#">Voraussetzungen</a></li>
+            <li><a href="#">Hypothekenrechner</a></li>
+            <li><a href="#">Finanzierungsanfrage</a></li>
+            <li><a href="#">Häufige Fragen</a></li>
+           
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">VORSORGE</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Häufige Fragen</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">VERSICHERUNG</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Haushalt- und Gebäudeversicherung</a></li>
+            <li><a href="#">Lebensversicherung</a></li>
+            <li><a href="#">Häufige Fragen</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">MAGAZIN</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Häufige Fragen</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">ÜBER UNS</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Beratersuche</a></li>
+            <li><a href="#">Häufige Fragen</a></li>
+          </ul>
+        </li>
+        
+        
+</ul>
   </div>
 </nav>
 </div>
+
 <div class="row">
-<div class="col-md-4">
-<h2>Willkommen</h2>
-</div>
 <div class="col-md-4 col-md-offset-4" style="padding-right:0px;margin-top:1%">
 <!-- Button trigger modal -->
 <div style="text-align:right">
@@ -92,10 +130,20 @@
     </div>
   </div>
 </div>   
-        
-        <!-- Server responses get written here -->
-        <div id="messages"></div>
-       
+</div>
+</div>
+</div>
+<div class="row">
+<img src="./images/family-net-traumhaus-gefunden.jpg">
+</div>
+<div class="row">
+
+<h1>yolo</h1>
+<h1>yolo</h1>
+<h1>yolo</h1>
+<h1>yolo</h1>
+<h1>yolo</h1>
+</div>
         <!-- Script to utilise the WebSocket -->
         <script type="text/javascript">
         	var outputtext;
@@ -194,6 +242,11 @@
             //JQuery on Site
 			
         
+            $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(200);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
+});
 		 
 		 
 		 
@@ -206,10 +259,14 @@ $('#myModal').on('shown.bs.modal', function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+
+
+
                  </script>
          
 
-</div>
+
 
 
 
