@@ -24,7 +24,7 @@ public class XMLWriter {
 		  String responseString;
 		  JAXBContext context;
 	        try {
-	        	context = JAXBContext.newInstance(ObjectFactory.class);
+	        	context = JAXBContext.newInstance(LoginEvent.class);
 	            Marshaller m = context.createMarshaller();
 	            //for pretty-print XML in JAXB
 	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

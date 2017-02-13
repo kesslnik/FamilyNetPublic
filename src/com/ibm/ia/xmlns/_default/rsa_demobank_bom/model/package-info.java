@@ -5,5 +5,18 @@
 // Generated on: 2017.02.10 at 05:27:38 PM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+
+
+
+@XmlSchema(
+	    namespace = "http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model",
+	    elementFormDefault = XmlNsForm.QUALIFIED,
+	    xmlns = {
+	        @XmlNs(prefix="m", namespaceURI="http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model")
+	    }
+	)
+
+
+
 package com.ibm.ia.xmlns._default.rsa_demobank_bom.model;
+import javax.xml.bind.annotation.*;

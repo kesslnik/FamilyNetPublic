@@ -11,6 +11,7 @@ package com.ibm.ia.xmlns._default.rsa_demobank_bom.model;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -38,6 +39,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  * 
  */
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "LoginEvent", propOrder = {
     "application",
@@ -45,6 +47,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "client",
     "datetime"
 })
+@XmlRootElement
 public class LoginEvent {
 
     @XmlElement(required = true)
