@@ -28,7 +28,7 @@ public class XMLWriter {
 	            Marshaller m = context.createMarshaller();
 	            //for pretty-print XML in JAXB
 	            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-	          
+	            m.setProperty(Marshaller.JAXB_SCHEMA_LOCATION, "http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model model.xsd");
 	           
 	            
 	            LoginEvent e = new LoginEvent();

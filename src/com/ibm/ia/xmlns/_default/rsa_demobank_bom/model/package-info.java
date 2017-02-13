@@ -4,10 +4,6 @@
 // Any modifications to this file will be lost upon recompilation of the source schema. 
 // Generated on: 2017.02.10 at 05:27:38 PM CET 
 //
-
-
-
-
 @XmlSchema(
 	    namespace = "http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model",
 	    elementFormDefault = XmlNsForm.QUALIFIED,
