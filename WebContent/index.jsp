@@ -134,17 +134,17 @@
 </div>
 </div>
 <div class="row" style="margin-top:12%">
-<img src="./images/family-net-traumhaus-gefunden.jpg">
+<img id="indeximg" src="./images/family-net-traumhaus-gefunden.jpg">
 </div>
-<div class="row">
+<div class="row" style="margin-top:3%">
+<div class="container">
+<div class="col-md-4"><img src="./images/berechnungen.jpg"></div>
+<div class="col-md-4"><img src="./images/konditionen.jpg"></div>
+<div class="col-md-4"><img src="./images/hypotheken-angebot.jpg"></div>
+</div>
+</div>
 
-<h1>yolo</h1>
-<h1>yolo</h1>
-<h1>yolo</h1>
-<h1>yolo</h1>
-<h1>yolo</h1>
-</div>
-        <!-- Script to utilise the WebSocket -->
+     <!-- Script to utilise the WebSocket -->
         <script type="text/javascript">
         	var outputtext;
                        
