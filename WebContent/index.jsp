@@ -12,7 +12,8 @@
 <title>family-net.ch</title>
 </head>
 <body>
-<div class="row">
+<div id="MAINY" style="position:absolute">
+<div class="row" style="">
 <div id="top">
 <div class="row" id="redtop">
 
@@ -25,18 +26,18 @@
   <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       </span>
       
-</div><!-- /input-group -->
-</div><!-- /.col-lg-6 -->
+</div>
+</div>
 
 
 </div>
 
-<div class= "container" >
+<div class= "container" style="position:relative">
 <div class="row" style="margin-top:2%">
 
 
 
-<div class="col-md-4" style="padding-left:1px;margin-top:1%"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
+<div class="col-md-4" style="padding-left:10px;margin-top:1%"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
 <div class ="col-md-4 col-md-offset-4"><h4 style="text-align:right"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="color:#ce002f"></span>
 +41 31 666 68 98</h4><h6 style="text-align:right">Wir sind gerne für Sie da!</h6></div>
 
@@ -133,36 +134,47 @@
 </div>
 </div>
 </div>
-<div class="row" style="margin-top:12%">
+<div class="row" style="margin-top:15%">
 <img id="indeximg" src="./images/family-net-traumhaus-gefunden.jpg">
 </div>
 <div class="row" style="margin-top:3%">
 <div class="container">
-<div class="col-md-4"><img src="./images/berechnungen.jpg"></div>
-<div class="col-md-4"><img src="./images/konditionen.jpg"></div>
-<div class="col-md-4"><img src="./images/hypotheken-angebot.jpg"></div>
+<div class="col-md-4" style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/berechnungen.jpg">
+<div ><h2>Hypotheken­rechner</h2>
+<p>Wie hoch darf die Hypothek sein? Berechnen Sie die Tragbarkeit Ihrer Wunschhypothek gleich selbst.</p>
+<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Zum Hypothekenrechner</button></div>
+</div>
+</div>
+</div>
+<div class="col-md-4" style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/konditionen.jpg">
+<div style="margin:5px"><h2>Aktuelle Zinssätze</h2>
+<p>family-net bietet Festzins­hypotheken von 2 bis 15 Jahren Laufzeit sowie variable Hypotheken an.</p>
+<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Zu den Zinssätzen</button></div>
+</div>
+</div>
+</div>
+<div class="col-md-4"style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/hypotheken-angebot.jpg">
+<div ><h2>Finanzierungs­anfrage</h2>
+<p>family-net bietet Festzins­hypotheken von 2 bis 15 Jahren Laufzeit sowie variable Hypotheken an.</p>
+<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Kostenlos Offerte anfordern</button></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
      <!-- Script to utilise the WebSocket -->
         <script type="text/javascript">
         	var outputtext;
-                       
-            
-            
-                
-                
+                     
                 // Create a new instance of the websocket
               var webSocket = new WebSocket('ws://' + window.document.location.host + '/FamilyNet/WebSocketIndexPage');
                  
                 /**
                  * Binds functions to the listeners for the websocket.
                  */
-                 
-            		
-            		
-                 
-                 
+
                 webSocket.onopen = function(event){
                     // For reasons I can't determine, onopen gets called twice
                     // and the first time event.data is undefined.
