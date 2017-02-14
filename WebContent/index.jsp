@@ -13,7 +13,7 @@
 </head>
 <body>
 <div id="MAINY" style="position:absolute">
-<div class="row" style="">
+<div class="row">
 <div id="top">
 <div class="row" id="redtop">
 
@@ -28,14 +28,10 @@
       
 </div>
 </div>
-
-
 </div>
 
 <div class= "container" style="position:relative">
 <div class="row" style="margin-top:2%">
-
-
 
 <div class="col-md-4" style="padding-left:10px;margin-top:1%"><img alt="" style="height:36px;width:180px;" src="./images/family-net_logo.png"></div>
 <div class ="col-md-4 col-md-offset-4"><h4 style="text-align:right"><span class="glyphicon glyphicon-earphone" aria-hidden="true" style="color:#ce002f"></span>
@@ -162,8 +158,47 @@
 </div>
 </div>
 </div>
+<div class=row>
+<div class="container" style="padding:15px;padding-left:30px">
+<h2>Finanzieren - Vorsorgen - Versichern</h2>
+<p>family-net, ein Partnerangebot der Schweizerischen Mobiliar Versicherungs­gesellschaft AG und der Berner Kantonalbank AG, kombiniert Finanzieren, Vorsorgen und Versichern in einem Paket. Zusätzlich profitieren Sie von attraktiven Konditionen und Zusatzdienstleistungen.</p>
+<ul>
+<li>Attraktive Zinskonditionen für Ihre Hypothek</li>
+<li>Analyse der Tragbarkeit und Vorsorge für Eigenheimbesitzer im Alter, bei Invalidität oder Tod</li>
+<li>Einmaliger Kundenvorteil mit unserer Versicherung von max. CHF 400.-</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div id="graybottom1">
+<div class="container">
+<div class="col-md-3">
+<p>family-net.ch ist ein Partnerangebot der Mobiliar und der Berner Kantonalbank AG</p>
+</div>
+<div class="col-md-3">
+<p>Legal Disclaimer: Bitte beachten Sie die wichtigen rechtlichen Hinweise und die Ausführungen zum Datenschutz der BEKB.
+Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Weitere Informationen unter folgendem Link.</p>
+</div>
+<div class="col-md-3">
+<h4 style="color:white">Registrierung Newsletter</h4>
+<div class="input-group input-group-sm" style="margin-top:1.5%;">
+    <input type="text" class="form-control" placeholder="E-Mail-Adresse">
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+      </span>
+</div>
+</div>
+<div class="col-md-3">
+<img src="./images/BEKBgrau.jpg">
+<img src="./images/logo-mobiliar.jpg">
 </div>
 
+</div>
+</div>
+<div id="graybottom2"></div>
+</div>
+</div>
      <!-- Script to utilise the WebSocket -->
         <script type="text/javascript">
         	var outputtext;
@@ -238,19 +273,8 @@
 			
 
                 
-            	$( "#Popup" ).fadeIn( 3000, function() {});
-           		//closeSocket(); 
-                
-            }
-			
-			
-            
-            
-            
-            
-            
-            
-            
+            	$( "#Popup" ).fadeIn( 3000, function() {});}
+           	//closeSocket();  
             //JQuery on Site
 			
         
@@ -259,11 +283,7 @@
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(200);
 });
-		 
-		 
-		 
-
-
+            
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
@@ -272,20 +292,6 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-
-
-
-                 </script>
-         
-
-
-
-
-
-		
-
-
-
-
+</script>
 </body>
 </html>

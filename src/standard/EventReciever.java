@@ -85,7 +85,7 @@ public class EventReciever extends HttpServlet {
         		imp.setClientnr(action.getClient());
         		imp.setChannel("E-Banking");
         		imp.setimpName(action.getImpulseName());
-        		EchoServer.getImp(imp);
+        		WebSocketIndexPage.getImp(imp);
     	    	
     	    	
     	    
@@ -106,7 +106,7 @@ public class EventReciever extends HttpServlet {
     	    	
     	    	
     	    	
-    	    	EchoServer.Options(sendlist);
+    	    	WebSocketIndexPage.Options(sendlist);
     	    	
     	    	//EchoServer.Message(action.getMessage());
     	    	

@@ -92,3 +92,21 @@ body{
         width: 100%;
         height: auto;
 }
+
+
+#graybottom1{
+ background-color:#333;
+ text-color:red;
+ color:#868686;
+ padding:20px;
+ /*height:15px;*/
+ }
+
+
+ #graybottom2{
+ background-color:#868686;
+ text-color:red;
+ color:#868686;
+ padding:20px;
+ /*height:15px;*/
+ }
