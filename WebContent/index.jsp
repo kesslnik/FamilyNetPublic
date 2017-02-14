@@ -88,44 +88,25 @@
         </li>
         
         
+        
+        
+</ul>
+<ul class="nav navbar-nav navbar-right" style="display:none" id="Popup">
+<li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">KONTAKT</a>
+         <ul class="dropdown-menu">
+         <li id="nested" style="width:100px"></li>
+    <div class="row">
+    	<button id="Button1" type="button" class="btn btn-default" onclick="send(1)"></button>
+        <button id="Button2" type="button" class="btn btn-primary" onclick="send(2)"></button>
+        <button id="Button3" type="button" class="btn btn-primary" onclick="send(3)"></button>
+    </div>
+	
+          </ul>
+        <li>
 </ul>
   </div>
 </nav>
-</div>
-
-<div class="row">
-<div class="col-md-4 col-md-offset-4" style="padding-right:0px;margin-top:1%">
-<!-- Button trigger modal -->
-<div style="text-align:right">
-<span id="Popup" style="display:none" data-toggle="modal" data-target="#myModal">
-<button type="button" id="popbutton" class="btn btn-default"  data-toggle="tooltip" data-placement="left" title="Interesse an einem Banking Package?">Information</button>
-</span>
-</div>
-</div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Banking Package</h4>
-      </div>
-      <div class="modal-body">
-      
-     <div id="textDiv">
-    <div id="nested"></div>
-	</div>
-     
-     
-      </div>
-      <div class="modal-footer">
-        <button id="Button1" type="button" class="btn btn-default" data-dismiss="modal" onclick="send(1)"></button>
-        <button id="Button2" type="button" class="btn btn-primary" data-dismiss="modal" onclick="send(2)"></button>
-        <button id="Button3" type="button" class="btn btn-primary" data-dismiss="modal" onclick="send(3)"></button>
-      </div>
-    </div>
-  </div>
 </div>   
 </div>
 </div>
@@ -262,7 +243,6 @@ Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (
                 
                 
                 
-            	var div = document.getElementById("textDiv");
             	var nestedDiv = document.getElementById("nested");
 				nestedDiv.textContent = object.message;
 				document.getElementById("Button1").innerText = object.button1;
