@@ -95,7 +95,8 @@
 <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">KONTAKT</a>
          <ul class="dropdown-menu">
-         <li id="nested" style="width:100px"></li>
+         <div class="row" style="text-align:center">
+         <div id="nested" style="padding:15px;text-align:center"></div></div>
     <div class="row">
     	<button id="Button1" type="button" class="btn btn-default" onclick="send(1)"></button>
         <button id="Button2" type="button" class="btn btn-primary" onclick="send(2)"></button>

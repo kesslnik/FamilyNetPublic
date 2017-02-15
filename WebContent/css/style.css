@@ -110,6 +110,25 @@ body{
  padding:20px;
  /*height:15px;*/
  }
+ .navbar-right li:hover{
+ background-color:white;
+ }
+ 
+  .navbar-right li:hover{
+ background-color:white;
+ 
+
+ 
+ 
+ }
+ .navbar-right .dropdown-menu{
+ background-color:white;
+ 
+  min-width: 600px; 
+  text-align:center;
+ 
+ }
+ 
  
  
  
