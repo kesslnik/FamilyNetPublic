@@ -43,7 +43,7 @@ public class home extends HttpServlet {
             sc.setAttribute("messages", htmlMessage + currentMessages);
         }
         **/
-		response.sendRedirect("home.jsp");
+		request.getRequestDispatcher("/home.jsp").forward(request, response);
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class home extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
 	}
 
 }

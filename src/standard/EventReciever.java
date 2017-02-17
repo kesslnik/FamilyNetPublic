@@ -83,7 +83,7 @@ public class EventReciever extends HttpServlet {
     	    	**/
         		IncomingImpuls imp = new IncomingImpuls();
         		imp.setClientnr(action.getClient());
-        		imp.setChannel("E-Banking");
+        		imp.setChannel("Online");
         		imp.setimpName(action.getImpulseName());
         		WebSocketIndexPage.getImp(imp);
     	    	

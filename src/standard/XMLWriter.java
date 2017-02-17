@@ -34,7 +34,7 @@ public class XMLWriter {
 	            LoginEvent e = new LoginEvent();
 	            e.setChannel(user.getChannel());
 	            e.setDatetime(user.getDate());
-	            e.setClient(user.getSession());
+	            e.setClient("1");
 	            
 	            
 	            // Write to System.out for debugging
@@ -43,6 +43,7 @@ public class XMLWriter {
 				m.marshal(e, sw );
 	            responseString =sw.toString();
 
+	            System.out.println("XMLSUCESS");
 	            return responseString;
 	            // Write to File
 	            //m.marshal(user, new File("text.xml"));
@@ -65,7 +66,7 @@ public class XMLWriter {
 			context1 = JAXBContext.newInstance(ClientReaction.class);
 			Marshaller m1 = context1.createMarshaller();
 			m1.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-			
+            m1.setProperty(Marshaller.JAXB_SCHEMA_LOCATION, "http://www.ibm.com/ia/xmlns/default/RSA_DemoBank_BOM/model model.xsd");
 			
 			
 			StringWriter sw1 = new StringWriter();

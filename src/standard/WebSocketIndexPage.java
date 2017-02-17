@@ -25,25 +25,30 @@ import javax.websocket.Session;
  * Websocket Endpoint implementation class WebSocketIndexPage */
 
 @ServerEndpoint("/WebSocketIndexPage")
-
 public class WebSocketIndexPage {
 	public static Session session;
 	
 public static int clientnr =0;
 	
-	ClientList CL = new ClientList();
+	public static ClientReaction rc;
+	 
     
     public WebSocketIndexPage() {
         super();
         // TODO Auto-generated constructor stub
+        
+        
     }
+   
+    
     
     
     @OnOpen
     public void onOpen (Session session1){
-    	System.out.println(session1.getId() + " has opened a connection");
     	session = session1;
+    	System.out.println(session1.getRequestURI());
     	
+    	if(clientnr<2){
     	User k = new User();
 		k.setApplication("family-net");
 		k.setChannel("Family-net Hypothek");
@@ -56,7 +61,10 @@ public static int clientnr =0;
 		k.setSession(session.getId());
 		String xmlString = XMLWriter.jaxbObjectToXMLString(k);
 		System.out.println(sendEvent(xmlString));
-		
+		clientnr++;
+    	}else{
+    		System.out.println("Client Event bereits erstellt");
+    	}
 		
     	
     	
@@ -64,27 +72,28 @@ public static int clientnr =0;
     }
     
     
-    
+    @OnMessage
     public static void onMessage(String message, Session session){
-    	//rc.setReaction(message);
+    	System.out.println(message);
     
+    	rc.setReaction(message);
     	
     	
-    	//try {
-			//rc.setDatetime(getXMLGregorianCalendarNow());
-		//} catch (DatatypeConfigurationException e) {
-			// TODO Auto-generated catch block
-		//	e.printStackTrace();
-		//}
-    	//sendEvent(XMLWriter.JAXBtoXMLString(rc));
+    	try {
+			rc.setDatetime(getXMLGregorianCalendarNow());
+		} catch (DatatypeConfigurationException e) {
+			 
+			e.printStackTrace();
+		}
+    	sendEvent(XMLWriter.JAXBtoXMLString(rc));
     	
     	
-       // System.out.println(rc.toString());
-        try {
-            session.getBasicRemote().sendText(message);
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
+        
+       // try {
+         //   session.getBasicRemote().sendText(message);
+       // } catch (IOException ex) {
+        //    ex.printStackTrace();
+       // }
     }
     
    
@@ -133,10 +142,10 @@ public static int clientnr =0;
     }  
     	
     public static void getImp(IncomingImpuls ac){
-    //	rc = new ClientReaction();
-    	//rc.setChannel(ac.getChannel());
-    	//rc.setClient(ac.getClientnr());
-    	//rc.setLastImpulseName(ac.getName());
+    	rc = new ClientReaction();
+    	rc.setChannel(ac.getChannel());
+    	rc.setClient(ac.getClientnr());
+    	rc.setLastImpulseName(ac.getName());
     	
     }
     
