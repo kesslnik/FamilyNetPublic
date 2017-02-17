@@ -118,38 +118,37 @@
 </div>
 <div class="row" style="margin-top:3%">
 <div class="container">
-<div class="col-md-4" style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/berechnungen.jpg">
-<div ><h2>Hypotheken­rechner</h2>
-<p>Wie hoch darf die Hypothek sein? Berechnen Sie die Tragbarkeit Ihrer Wunschhypothek gleich selbst.</p>
-<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Zum Hypothekenrechner</button></div>
+<h3 style="margin:10px">family.net > Hypothek</h3>
+<div class="col-md-8" style="position:static"><div style="padding:15px;background-color:white">
+<div ><h1>Hypothek</h1>
+<p>Erfahren Sie mehr über unsere wählbaren Hypothekarmodelle oder berechnen Sie die Tragbarkeit Ihrer Wunschhypothek.</p>
+<h2>Wählen Sie die Hypothek, die zu Ihnen passt.</h2>
+<p>Zwei Hypothekarmodelle stehen zur Auswahl. Nachfolgend werden diese vorgestellt.</p>
+<a>Zu den Festhypotheken</a>
+<a>Zur variablen Hypothek</a>
+<h2>aktuelle Zinssätze</h2>
+<p>Möchten Sie mehr erfahren über die aktuellen Zinssätze für feste und variable Hypotheken? Hier finden Sie alle wichtigen Informationen über Konditionen, Berechnungen und Tragbarkeit.</p>
+<a>Zu den aktuellen Zinssätzen</a>
+<h2>Sie haben Ihr Traumobjekt gefunden?</h2>
+<p>Gerne prüfen wir Ihre Anfrage und setzen uns mit Ihnen in Verbindung.</p>
+<a>Zur Finanzierungsanfrage</a>
 </div>
 </div>
 </div>
-<div class="col-md-4" style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/konditionen.jpg">
-<div style="margin:5px"><h2>Aktuelle Zinssätze</h2>
+<div class="col-md-4" style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/Berater.jpg">
+<div style="margin:5px"><h2>Berater</h2>
+<p>Finden Sie eine Beraterin oder einen Berater in Ihrer Nähe.</p>
+<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Zur Beratersuche</button></div>
+</div>
+</div>
+</div>
+<div class="col-md-4"style="position:static;margin-top:10px;margin-bottom:15px"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/konditionen.jpg">
+<div ><h2>Aktuelle Zinssätze</h2>
 <p>family-net bietet Festzins­hypotheken von 2 bis 15 Jahren Laufzeit sowie variable Hypotheken an.</p>
-<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Zu den Zinssätzen</button></div>
+<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Offerte anfordern</button></div>
 </div>
 </div>
 </div>
-<div class="col-md-4"style="position:static"><div style="padding:15px;background-color:white"><img id="articleimg" src="./images/hypotheken-angebot.jpg">
-<div ><h2>Finanzierungs­anfrage</h2>
-<p>family-net bietet Festzins­hypotheken von 2 bis 15 Jahren Laufzeit sowie variable Hypotheken an.</p>
-<div style="text-align:center"><button type="button" style="background-color:#ce002f;color:white" class="btn btn">Kostenlos Offerte anfordern</button></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=row>
-<div class="container" style="padding:15px;padding-left:30px">
-<h2>Finanzieren - Vorsorgen - Versichern</h2>
-<p>family-net, ein Partnerangebot der Schweizerischen Mobiliar Versicherungs­gesellschaft AG und der Berner Kantonalbank AG, kombiniert Finanzieren, Vorsorgen und Versichern in einem Paket. Zusätzlich profitieren Sie von attraktiven Konditionen und Zusatzdienstleistungen.</p>
-<ul>
-<li>Attraktive Zinskonditionen für Ihre Hypothek</li>
-<li>Analyse der Tragbarkeit und Vorsorge für Eigenheimbesitzer im Alter, bei Invalidität oder Tod</li>
-<li>Einmaliger Kundenvorteil mit unserer Versicherung von max. CHF 400.-</li>
-</ul>
 </div>
 </div>
 <div class="row">
