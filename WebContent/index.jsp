@@ -46,9 +46,9 @@
     
     
      <li class="dropdown" id="xy">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">HYPOTHEK</a>
+          <a href="/home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:black; font-size:1.1em">HYPOTHEK</a>
           <ul class="dropdown-menu">
-            <li><a href="#">Festhypotheken</a></li>
+            <li><a href="./home">Festhypotheken</a></li>
             <li><a href="#">Variable Hypothek</a></li>
             <li><a href="#">Hypothekarzins</a></li>
             <li><a href="#">Voraussetzungen</a></li>
